@@ -1,0 +1,174 @@
+.recipeDetail {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.recipeImage {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.recipeName {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.recipeArea {
+  font-size: 1.2rem;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.recipeArea:hover {
+  color: #333;
+}
+
+.instructions {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.instructions h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.ingredients {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.ingredients ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ingredients li {
+  margin-bottom: 0.5rem;
+}
+
+.ingredients a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.ingredients a:hover {
+  color: #333;
+}
+
+.sidebar {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.categoryLink {
+  display: inline-block;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  margin-bottom: 1.5rem;
+}
+
+.categoryLink:hover {
+  color: #333;
+}
+
+.relatedRecipesSection {
+  margin-top: 2rem;
+}
+
+.relatedRecipesTitle {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.relatedRecipes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.relatedRecipeCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.relatedRecipeCard:hover {
+  background-color: #f5f5f5;
+}
+
+.relatedRecipeImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.relatedRecipeName {
+  font-size: 1rem;
+  margin: 0;
+  color: #333;
+}
+
+.loading,
+.error,
+.noRecipe {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error {
+  color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .recipeDetail {
+    grid-template-columns: 1fr;
+  }
+}
